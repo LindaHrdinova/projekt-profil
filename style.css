@@ -1,11 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /*
   BARVY
-  pozadi stranky      #bdc3c7
-  pozadi karticky     #31363b
-  barva textu         #bdc3c7
+  pozadi stranky      #bdc3c7 *
+  pozadi karticky     #31363b *
+  barva textu         #bdc3c7 *
   oddelovace          #3f464d
   czechitas logo      #b92e81
   tlacitko portfolio  #e74c3c
   tlacitko facebook   #3b5998
   tlacitko twitter    #1da1f2
 */
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #bdc3c7;
+}
+
+a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  width: 350px;
+  background-color: #31363b;
+  color: #bdc3c7;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__header {
+  position: relative;
+}
+
+.logo {
+  background-color: #b92e81;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__main {
+  padding: 20px;
+}
+
+.card__title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.foto {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.card__link {
+  margin: 0;
+  padding: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.card__link:hover {
+  color: white;
+}
+
+.card__link--portfolio {
+  width: 100%;
+  border-top: #3f464d solid 2px;
+  border-bottom: #3f464d solid 2px;
+}
+
+.card__link--facebook {
+  width: 49.8%;
+  border-right: #3f464d solid 1px;
+
+}
+
+.card__link--twitter {
+  width: 49.8%;
+  border-left: #3f464d solid 1px;
+}
+
+.card__link--portfolio:hover {
+  background-color: #e74c3c;
+}
+
+.card__link--twitter:hover {
+  background-color: #1da1f2;
+}
+
+.card__link--facebook:hover {
+  background-color: #3b5998;
+}
